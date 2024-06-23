@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com"; // Import emailjs-com instead of @emailjs/browser
 
 import { styles } from "../style";
 import { EarthCanvas } from "./canvas";
@@ -21,19 +21,33 @@ const Contact = () => {
     const { name, value } = e.target;
     setForm({
       ...form,
-      [name]: value
+      [name]: value,
     });
   };
 
-  const handleSubmit =  (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send('service_kse026o')
-
-
-
-
+    emailjs.sendForm(
+      "service_kse026o", 
+      "template_cf747ou", 
+      formRef.current,
+      "JR3LllpuECcOk_kJo" 
+    )
+      .then((response) => {
+        console.log("Email sent successfully:", response.status, response.text);
+        setLoading(false);
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.error("Email sending failed:", error);
+        setLoading(false);
+      });
   };
 
   return (
@@ -41,6 +55,7 @@ const Contact = () => {
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+        style={{zIndex: '999'}}
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
