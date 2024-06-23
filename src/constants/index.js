@@ -182,7 +182,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: '',
     source_code_link: "https://github.com/",
   },
   {
