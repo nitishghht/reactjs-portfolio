@@ -167,7 +167,7 @@ const projects = [
   {
     name: "Landing Page",
     description:
-      "This company landing page, built with ReactJS, CSS, and various libraries, features a modern design, highlighting services, team, and contact info for a responsive user experience.",
+      "This landing page, built with ReactJS, CSS, and various libraries, features a modern design, highlighting services, team, and contact info for a responsive user experience.",
     tags: [
       {
         name: "react",
