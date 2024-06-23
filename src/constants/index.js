@@ -162,7 +162,7 @@ const projects = [
       },
     ],
     image: 'image', // Use the project variable
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/nitishghht",
   },
   {
     name: "Landing Page",
@@ -183,7 +183,7 @@ const projects = [
       },
     ],
     image: '',
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/nitishghht",
   },
   {
     name: "TODO App",
@@ -200,7 +200,7 @@ const projects = [
       },
     ],
     image: '',
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/nitishghht",
   },
   {
     name: "Portfolio",
@@ -221,7 +221,7 @@ const projects = [
       },
     ],
     image: portfolio,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/nitishghht/reactjs-portfolio",
   },
 ];
 
