@@ -1,5 +1,5 @@
 import React from "react";
-import { github } from "../assets";
+import { netlify } from "../assets";
 import { fadeIn, textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
@@ -40,7 +40,7 @@ const ProjectCard = ({
               className="black-gradient w-10 h-10
           rounded-full flex justify-center itmes-center cursor-pointer"
             >
-              <img src={github} alt="github" className="" />
+              <img src={netlify} alt="netlify" className="" />
             </div>
           </div>
         </div>

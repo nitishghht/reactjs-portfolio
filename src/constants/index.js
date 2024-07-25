@@ -3,6 +3,9 @@ import {
   backend,
   creator,
   web,
+  TODO,
+  Restuaro,
+  netlify,
   javascript,
   typescript,
   html,
@@ -167,7 +170,7 @@ const projects = [
   {
     name: "Landing Page",
     description:
-      "This landing page, built with ReactJS, CSS, and various libraries, features a modern design, highlighting services, team, and contact info for a responsive user experience.",
+      "A responsive restaurant website built with React and Tailwind CSS, featuring smooth animations and interactive elements Image on the left and description on the right.",
     tags: [
       {
         name: "react",
@@ -178,11 +181,15 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "CSS",
+        name: "Tailwind CSS",
         color: "pink-text-gradient",
       },
+      {
+        name: "Motion",
+        color: "green-text-gradient",
+      },
     ],
-    image: '',
+    image: Restuaro,
     source_code_link: "https://github.com/nitishghht",
   },
   {
@@ -199,13 +206,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: '',
-    source_code_link: "https://github.com/nitishghht",
+    image: TODO,
+    source_code_link: "https://itask-your-manager.netlify.app/",
   },
   {
     name: "Portfolio",
     description:
-      "Brief overview of the individual's background, skills, and career goals. Selected projects or pieces that highlight the best work. This may include descriptions, images, videos, or links to live projects. Detailed information about professional experience, education, and relevant certifications.",
+      "Brief overview of the individual's background, skills, and career goals. Selected projects or pieces that highlight the best work. Detailed information about professional experience.",
     tags: [
       {
         name: "react",
@@ -221,7 +228,7 @@ const projects = [
       },
     ],
     image: portfolio,
-    source_code_link: "https://github.com/nitishghht/reactjs-portfolio",
+    source_code_link: "https://codewithnit.netlify.app/",
   },
 ];
 

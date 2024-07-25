@@ -12,7 +12,7 @@ const SectionWrapper = (Component, idName) => {
       viewport={{ once: true, amount: 0.25}}
       id={idName}
       className={`${styles.padding} max-w-7xl
-      max-auto  z-0`} 
+      max-auto relative z-0`} 
     >
       <span className='hash-span' id={idName}>&nbsp;</span>
       <Component />
